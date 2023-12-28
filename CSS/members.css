@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: radial-gradient(black,rgb(40, 40, 40));
+}
+
+
+main{
+    margin-top: 20vh;
+}
+
+.main{
+    size: absolute;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    background-image: linear-gradient( rgb(23, 23, 23), rgb(37, 37, 37));
+}
+
+.topic{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: -10vh;
+    font-size: 8vh;
+    color: rgb(252, 47, 190);;
+}
+
+.explain{
+    font-size: 3vh;
+    font-family: sans-serif;
+    color: white;
+}
+
+.main img{
+    height: 70vh;
+    padding: 3vw;
+    margin-top: -10vh;
+
+}
+
+.M{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.x{
+    padding: 2vw;
+    font-family: fantasy;
+    font-size: 8vh;
+    color: white;
+    margin-right: -2vw ;
+}
+
+.z{
+    padding: 2vw;
+    font-family: fantasy;
+    font-size: 8vh;
+    color: rgb(255, 43, 188);
+}
+
+.members{
+    width: 100vw;
+    height: 300vh;
+    display: grid;
+    place-items: center;
+    background-attachment: fixed;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    
+}
+
+.a-member{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 14vw;
+    width: 100vw;
+    border-radius: 2%;
+}
+
+.a-member img{
+    height: 50vh;
+    padding: 5vh;
+}
+
+.content{
+    display: grid;
+    place-items: left;
+    margin-left: -70vh;
+    width: 100vh
+}
+
+.content1{
+    margin-left: 50vw;
+}
+
+.name{
+    color: rgb(255, 43, 188);
+    font-size: 6vh;
+    margin-left: -30vh;
+}
+
+.post{
+    color: white;
+    font-size: 5vh;
+    margin-left: -30vh;
+}
+
+.post-detail{
+    margin-top: 1vh;
+    margin-left: -30vh;
+    width: 40vw;
+    font-family: sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+
+
+.contact{
+    margin-left: -30vh;
+    margin-top: 3vh;
+}
+
+.mobile{
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vh;
+}
+
+.email{
+    margin-top: 0.3vh;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vh;
+}
+

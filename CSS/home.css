@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(54, 54, 54);
+    scroll-behavior: smooth;
+    animation: fade 0.4s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 110vh;
+    background-image: url(../IMAGES/guitar.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    transition: 0.2s ease;
+}
+
+.container img{
+    margin-top: 25vh;
+    display: block;
+    opacity: 0.5;
+    width: 30vh;
+    height: auto;
+    transition: 0.2s ease;
+    position: fixed;
+    transform: translateY(-15vh);
+}
+
+.container img.active{
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.container p{
+    margin-top: -30vh;
+    text-align: center;
+    color: rgb(255, 0, 166);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4vh;
+    transition: 0.2s ease;
+    position: fixed;
+    transform: translateY(+35vh);
+}
+
+.container p.active{
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.A-vision{
+    margin-top: -5vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-image: linear-gradient( rgb(26, 26, 26), rgb(54, 54, 54));
+}
+
+.A-vision img{
+    height: 70vh;
+    margin-top: -5vh;
+    margin-left: -3vw;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.A-vision img.active{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.A-vision h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 2vw;
+    font-size: 8vh;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.A-vision p{
+    font-family: sans-serif;
+    margin-right: 4vw;
+    font-size: 3.5vh;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.description h2{
+    transform: translateX(+100vw);
+    color: white;
+}
+
+.description h2.active{
+    transform: translateX(0);
+    transition: all 0.75s ease;
+    color: rgb(255, 0, 166);
+}
+
+.description p{
+     transform: translateX(+100vw)
+}
+
+.description p.active{
+    transform: translateX(0);
+    transition: all 1.5s ease;
+    color: white;
+}
+
+.latest{
+    background-image: radial-gradient(rgb(55, 55, 55), rgb(54,54,54));
+    display: grid;
+    place-items: center;
+    height: 20vh;
+}
+
+.latest p{
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: rgb(255, 50, 159);
+    font-size: 7vh;
+}
+
+
+.things{
+    padding: 2vw;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+    background-image: linear-gradient( rgb(54, 54, 54), rgb(26, 26, 26));
+
+}
+
+
+.things a{
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.image{
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    border: 5px solid rgb(255, 0, 234);
+    overflow: hidden;
+    transition: all 0.6s ease;
+    transform: translateY(30vw);
+    margin-bottom: 4vh;
+
+}
+
+.image.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+.image.active:hover{
+    transform: translateY(-3vh);
+    transition: 0.3s ease;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+}
+
+.image1{
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    border: 5px solid rgb(255, 0, 234);
+    overflow: hidden;
+    transition: all 0.6s ease;
+    transform: translateY(30vw);
+    margin-bottom: 4vh;
+
+}
+
+.image1.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.6s ease-in;
+}
+
+.image1.active:hover{
+    transform: translateY(-3vh);
+    transition: 0.3s ease;
+}
+
+.image1 img{
+    display: block;
+    width: 100%;
+}
+
+.image2{
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    border: 5px solid rgb(255, 0, 234);
+    overflow: hidden;
+    transition: all 0.6s ease;
+    transform: translateY(30vw);
+    margin-bottom: 4vh;
+
+}
+
+.image2.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.9s ease-in;
+}
+
+.image2.active:hover{
+    transform: translateY(-3vh);
+    transition: 0.3s ease;
+}
+
+.image2 img{
+    display: block;
+    width: 100%;
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100.5%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.image-description{
+    font-family: sans-serif;
+    font-size: 3vh;
+    text-align: center;
+}
+
+
+
+#preloader{
+    display: grid;
+    place-items: center;
+    background-color: rgb(21, 21, 21);
+    height: 105vh;
+    width: 100vw;
+    overflow-x: hidden;
+    z-index: 100;
+}
+
+#preloader img{
+    transform: translateY(-2.26vh);
+    height: 30vh;
+    width: 30vh;
+    opacity: 0.5;
+    animation: animate 2s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-120vh) rotate(-360deg);
+    }
+
+    100%{
+        transform: translate(0, -2.26vh) rotate(0deg);
+    }
+}
+
+
+
+

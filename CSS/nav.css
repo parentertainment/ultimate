@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    padding-left: 1vw;
+    width: 100vw;
+    height: 20vh;
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    transition: all 0.4s ease-in-out;
+}
+
+nav.active{
+    border-bottom: 3px solid rgb(255, 43, 177);
+    background-color: rgb(23, 23, 23);
+    transition: 0.4s ease-in-out;
+
+}
+
+.header{
+    display: inline-flex;
+    width: 30vw;
+}
+
+.logo{
+    display: inline-flex;
+}
+
+
+
+.logo img{
+    width: 20vw;
+    height: 9vw;
+    margin-left: 3vw;
+    opacity: 0.7;
+}
+
+.lists ul{
+    display: inline-flex;
+   
+}
+
+.lists ul li{
+    margin: 0 3vw;
+    margin-top: 4vw;
+    list-style: none;
+}
+
+.lists ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    animation: 1s ease;
+}
+
+.lists ul li a:hover{
+    color: rgb(255, 0, 217);
+    opacity: 1;
+    transition: 0.4s ease;
+}
+

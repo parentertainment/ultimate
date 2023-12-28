@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(23, 23, 23);
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+    margin-top: 20vh;
+}
+
+.contact{
+    display: grid;
+    place-items: center;
+    height: 22vh;
+    background-color:rgb(23, 23, 23);
+}
+
+.contact P{
+    font-size: 8vh;
+    color:white;
+    font-family: fantasy;
+}
+
+.contact-details{
+    height: 60vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient( rgb(23, 23, 23), rgb(37, 37, 37));
+}
+
+.email-phone{
+    display: grid;
+}
+
+.email-phone h1{
+    color: rgb(255, 28, 187);
+}
+
+.email-phone p{
+    font-size: 4vh;
+    color: white;
+}
+
+.mailing-address{
+    display: grid;
+    margin-top: 3vh;
+}
+
+.mailing-address p{
+    font-size: 4vh;
+    color: white;
+    font-style: italic;
+}
+
+.mailing-address h1{
+    color: rgb(255, 28, 187);
+}
+
+.last{
+    display: grid;
+}
+
+.social{
+    background-image: linear-gradient( rgb(37, 37, 37), rgb(23, 23, 23));
+    display: grid;
+    place-items: center;
+}
+
+.social p{
+    color: rgb(255, 28, 187);
+    font-size: 8vh;
+    font-family: fantasy;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom:8vh;
+    background-color: rgb(23, 23, 23);
+}
+
+.icons img{
+    padding: 0 10vh;
+    height: 15vh;
+    transition: 0.3s ease;
+}
+
+.icons img:hover{
+    transform: scale(120%);
+    transition: 0.3s ease;
+}
+
+
